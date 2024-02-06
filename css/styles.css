@@ -1,0 +1,39 @@
+.container {
+    background-color: #DDDDDD;
+    padding: 4px; display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'sub-left sub-left sub-left sub-right sub-right sub-right'
+    'left-menu left-menu main-area main-area main-area right-area'
+    'footer footer footer footer footer footer';
+    grid-gap: 5px; text-align: center; font-size: 24pt;
+}
+.container div { padding-top: 20px; padding-bottom: 20px;
+}
+.header {
+grid-area: header;
+background-color: #da6363;
+}
+.sub-left {
+grid-area: sub-left; background-color: rgb(92, 211, 77);
+}
+.sub-right {
+grid-area: sub-right; background-color: rgb(92, 211, 77);
+}
+.left-menu {
+grid-area: left-menu; background-color: hsl(224, 78%, 53%); height: 300px;
+}
+.main-area {
+grid-area: main-area; background-color: #4f45a7;
+}
+.right-area {
+grid-area: right-area; background-color: hsl(224, 78%, 53%);
+}
+.footer {
+grid-area: footer;
+background-color: #FFAA00;
+}
+*{    
+    /* padding:0;
+    margin:0; */
+}
